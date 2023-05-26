@@ -26,6 +26,7 @@ Image: Fet Gate array shown above. This is the key component in the ESC.
 
 ## Prototyping
 The prototype phase of this project took the longest. To ensure that all the components were functioning as is, all components of the circuit were to be tested individually and together. Notable challenges in this development phase were prototyping the SMD components we used, as they were incredibly fragile to both heat and voltage transients, which broke quite a few of our components.
+<img src="https://github.com/constlo/Electronic_Speed_Controller/blob/master/20230411_123105.jpg" />
 
 ## Circuit Design
 The circuit was designed in KiCad, with custom models for the DRV8300 mosfet driver, as well as the analog multiplexer 74HC5042. This design is quite sparse to make space for future improvements and components.
