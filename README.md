@@ -38,7 +38,12 @@ The circuit was designed in KiCad, with custom models for the DRV8300 mosfet dri
 
 ## The code
 The basic principle of the software is to create a fixed-frequency PWM signal, which is then driven through analog multiplexers (and inverted in the 74HC05 inverter). It incorporates then 4 GPIO pins and 1 PWM pin, saving on the total pin usage in case this circuit is ever expanded to work on 4 motors.
-<img src="" />
+
+Most of the code in this project was done in the STMCubeIDE generation tool, as the challenge was to find the most optimum starting clock speed, as well as the PWM frequency. Here is the pinout of the STM32:
+<img src="https://github.com/constlo/Electronic_Speed_Controller/blob/master/STM_IOC.png" />
+
+The 4 GPIO pins in the upper section of the STM32 are used to control the multiplexer outputs. They are controlled by the ToggleState() function in the main.c file.
+There are 4 ADC inputs as well. One of the inputs is used for reading the potentiometer, which was used in demoing this project. The other 3 inputs are unused, due to time constraints in the project. They were used to read the back EMF of the motor, but due to the relatively low speed of the STM32 they did not sample the signals fast enough. Thus, they were left out of the final project.
 
 ## Improvements
 This is currently an active project that I'm working on. The next goal of mine is to include Back EMF technology, such as Zero-crossing to detect the motor position accurately. Without the back-EMF, the motor can cog quite easily, drawing excess current and heating up. On the software side I'm also looking forward to implementing PWM- or protocol-based control to work with a Flight controller unit.
