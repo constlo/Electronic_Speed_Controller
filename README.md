@@ -3,6 +3,14 @@ An electronic speed controller (ESC) is a vital component in electronic systems 
 
 This project was a part of a 15 ECTS course which was done in OAMK. The basic goal of this project was to create a complete circuit which was capable of driving a brushless motor without heating up excessively.
 
+## Components used in this project:
+ - STM32F091RBT6 (Microcontroller)
+ - DRV8300DIPWR Mosfet Driver
+ - IRF3025 Power mosfet x6
+ - 74HC4052 Analog multiplexers x2
+ - 74HC05 Hex inverter
+ - LM2575T LDO with reference design
+
 ## The simulation
 My first goal was to get a basic grasp of the circuit's operation. I had been searching on the internet on how these circuits work, and landed on a great video on the basic principle of the ESC (Video: )
 I used my experience from my school to create a basic simulation. This circuit incorporates a synchronous clock circuit to create the 6 different motor phases which are needed for a full commutation.
