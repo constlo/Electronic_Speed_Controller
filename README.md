@@ -3,6 +3,10 @@ An electronic speed controller (ESC) is a vital component in electronic systems 
 
 This project was a part of a 15 ECTS course which was done in OAMK. The basic goal of this project was to create a complete circuit which was capable of driving a brushless motor without heating up excessively.
 
+Here is the complete product:
+
+<img src="https://github.com/constlo/Electronic_Speed_Controller/blob/master/20230526_182518.jpg" />
+
 ## Components used in this project:
  - STM32F091RBT6 (Microcontroller)
  - DRV8300DIPWR Mosfet Driver
